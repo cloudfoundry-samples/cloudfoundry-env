@@ -52,7 +52,7 @@ freq = 60 + (60 * 5 * (CloudFoundry::Environment.instance_index || 0))
 * services - Returns a Hashie::Mash representation of the services so it can be used as a class with native attributes
   * Cloud Foundry Services - http://start.cloudfoundry.com/services.html
   * Hashie - https://github.com/intridea/hashie
-* <service_name>_cnx - Returns a Hashie::Mash representation of only the credentials for a service. Example from rspec test:
+* [service_name]_cnx - Returns a Hashie::Mash representation of only the credentials for a service. Example from rspec test:
 
 ```ruby
 cf = CloudFoundry::Environment
@@ -61,7 +61,7 @@ cf.redis_cnx.host.should == "172.30.48.40"
 cf.redis_cnx.password.should == "49badd9d-40a9-aaa-4e8fcdc15a75"
 ```
 
-* <service_name>_info - Returns a Hashie::Mash representation of the service. Example from rspec test:
+* [service_name]_info - Returns a Hashie::Mash representation of the service. Example from rspec test:
 
 ``` ruby
 cf = CloudFoundry::Environment
