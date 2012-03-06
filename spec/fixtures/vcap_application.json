@@ -1,0 +1,18 @@
+{
+    "instance_id":"a91e10955ad90e37458a736ee3d55f9e",
+    "instance_index":0,
+    "name":"www-newstage2",
+    "uris":["www-newstage2.cloudfoundry.com"],
+    "users":["giorgioservice@springsource.com"],
+    "version":"a38cf47787b08a8f3d9316fccfaeaeac4282df2e-1",
+    "start":"2012-02-06 20:27:48 +0000",
+    "runtime":"ruby19",
+    "state_timestamp":1328560068,
+    "port":31044,
+    "limits":{
+        "fds":256,
+        "mem":134217728,
+        "disk":2147483648
+    },
+    "host":"172.30.49.192"
+}

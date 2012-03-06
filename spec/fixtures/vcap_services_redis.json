@@ -1,0 +1,15 @@
+{"redis-2.2":[
+    {
+        "name":"redis-www-cache",
+        "label":"redis-2.2",
+        "plan":"free",
+        "tags":["redis","redis-2.2","key-value","nosql"],
+        "credentials":{
+            "hostname":"172.30.48.40",
+            "host":"172.30.48.40",
+            "port":5076,
+            "password":"49badd9d-40a9-aaa-4e8fcdc15a75",
+            "name":"714f007c-3108-47f4-b8d8-c77b620eef9f"
+        }
+    }
+]}
