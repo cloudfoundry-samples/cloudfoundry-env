@@ -44,6 +44,7 @@ freq = 60 + (60 * 5 * (CloudFoundry::Environment.instance_index || 0))
 
 ## CloudFoundry::Environment Methods
 
+* host - Return a string with the host ip address or nil if not running on cloud
 * port - Returns integer with port number
 * instance_index - Returns integer with instance index starting at 1
 * running_local? - returns `true` if the app is not running on a CloudFoundry instance

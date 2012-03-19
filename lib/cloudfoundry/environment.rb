@@ -11,6 +11,10 @@ module CloudFoundry
         raw_port.to_i if raw_port
       end
 
+      def host
+        ENV["VCAP_APP_HOST"]
+      end
+
       def instance_index
         return app_info.instance_index if app_info
       end

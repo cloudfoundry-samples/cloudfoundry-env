@@ -10,6 +10,12 @@ describe "CloudFoundry::Environment" do
     cf.redis_cnx.should be_nil
   end
 
+  it "should read the host" do
+    CloudFoundry::Environment.host.should be_nil
+    ENV["VCAP_APP_HOST"] = "localhost"
+    CloudFoundry::Environment.host.should == "localhost"
+  end
+
   it "should recognize when its running on Cloud Foundry" do
     ENV["VCAP_APP_PORT"] = "9456"
     ENV["VCAP_APPLICATION"]  = load_fixture("vcap_application.json")
