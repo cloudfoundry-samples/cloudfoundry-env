@@ -25,6 +25,10 @@ module CloudFoundry
         Hashie::Mash.new(JSON.parse(raw_vcap_app)) if raw_vcap_app
       end
 
+      def first_url
+        raw_uris.first if raw_uris
+      end
+
       def running_local?
         app_info.nil?
       end

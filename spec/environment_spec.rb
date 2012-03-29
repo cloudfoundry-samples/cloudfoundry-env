@@ -5,6 +5,7 @@ describe "CloudFoundry::Environment" do
   it "Should recognize when its not running on Cloud Foundry" do
     cf = CloudFoundry::Environment
     cf.port.should be_nil
+    cf.first_url.should be_nil
     cf.running_local?.should be_true
     cf.raw_app_version.should be_nil
     cf.redis_cnx.should be_nil
@@ -22,6 +23,7 @@ describe "CloudFoundry::Environment" do
 
     cf = CloudFoundry::Environment
     cf.port.should == 9456
+    cf.first_url.should == "www-newstage2.cloudfoundry.com"
     cf.running_local?.should be_false
     cf.raw_uris.should include "www-newstage2.cloudfoundry.com"
     cf.is_prod_app?.should be_false

@@ -49,6 +49,10 @@ freq = 60 + (60 * 5 * (CloudFoundry::Environment.instance_index || 0))
 * instance_index - Returns integer with instance index starting at 1
 * running_local? - returns `true` if the app is not running on a CloudFoundry instance
 * is_prod_app?(regex) - Returns `true` if the app name starts with regex provided. Good for having staging and prod apps
+* first_url - Returns the first url for the app or nil
+* app_info - returns the entire environment described by VCAP_APPLICATION
+
+``` ruby
 
 * services - Returns a Hashie::Mash representation of the services so it can be used as a class with native attributes
   * Cloud Foundry Services - http://start.cloudfoundry.com/services.html
