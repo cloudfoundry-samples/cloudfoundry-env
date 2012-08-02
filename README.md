@@ -11,7 +11,7 @@ gem install cloudfoundry-env
 ### Gemfile
 
 ``` ruby
-gem "cloudfoundry-env","~> 0.0.2", :require => "cloudfoundry/environment"
+gem "cloudfoundry-env","~> 0.0.5", :require => "cloudfoundry/environment"
 ```
 
 ## Usage
@@ -52,7 +52,6 @@ freq = 60 + (60 * 5 * (CloudFoundry::Environment.instance_index || 0))
 * first_url - Returns the first url for the app or nil
 * app_info - returns the entire environment described by VCAP_APPLICATION
 
-``` ruby
 
 * services - Returns a Hashie::Mash representation of the services so it can be used as a class with native attributes
   * Cloud Foundry Services - http://start.cloudfoundry.com/services.html
